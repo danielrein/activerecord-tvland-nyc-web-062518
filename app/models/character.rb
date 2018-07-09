@@ -1,4 +1,5 @@
 class Character < ActiveRecord::Base
-  blongs_to :actor
+  belongs_to :actor
+  belongs_to :show
 
 end
