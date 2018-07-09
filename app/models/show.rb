@@ -3,8 +3,4 @@ class Show < ActiveRecord::Base
   has_one :genre
   has_many :characters
   has_many :actors, through: :characters
-
-  def genre
-    genre.name
-  end
 end
