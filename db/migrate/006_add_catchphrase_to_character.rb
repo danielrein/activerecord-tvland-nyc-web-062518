@@ -1,0 +1,1 @@
+class AddCatchPhraseToCharacter < ActiveRecord::Migration
