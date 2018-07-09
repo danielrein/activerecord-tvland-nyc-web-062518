@@ -4,6 +4,6 @@ class Character < ActiveRecord::Base
   belongs_to :network
 
   def say_that_thing_you_say
-    catchphrase
+    "#{self} always says: #{catchphrase}""
   end
 end
