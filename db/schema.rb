@@ -17,8 +17,11 @@ ActiveRecord::Schema.define(version: 6) do
     t.string "last_name"
   end
 
-# Could not dump table "characters" because of following StandardError
-#   Unknown type '' for column 'string'
+  create_table "characters", force: :cascade do |t|
+    t.string "name"
+    t.integer "show_id"
+    t.string "catchphrase"
+  end
 
   create_table "networks", force: :cascade do |t|
     t.string "call_letters"
